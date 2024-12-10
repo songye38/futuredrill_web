@@ -11,7 +11,9 @@ body {
   font-family: 'Pretendard-Regular', sans-serif;
 }
 
-
+* {
+  box-sizing: border-box; /* padding, border를 포함한 너비 계산 */
+}
 
 
 .App {
@@ -99,6 +101,11 @@ body {
 .book-image:hover {
   transform: scale(1.1); /* 이미지 호버 시 확대 */
 }
+.second_section{
+  margin: 100px;
+  display: flex;
+  justify-content: space-between;
+}
 
 
 @media (max-width: 768px) {
@@ -127,8 +134,10 @@ body {
     text-decoration: none; /* 링크의 기본 밑줄 제거 */
   }
   .second_section {
+    margin : 80px;
+    padding-top : 180px;
     width: 100%; /* 부모 컨테이너 너비를 화면 너비로 설정 */
-    height: 100vh; /* 부모 요소 높이를 화면 높이로 설정 */
+    height: auto; /* 부모 요소 높이를 화면 높이로 설정 */
     display: flex;
     flex-direction: column; /* 세로 방향으로 배치 */
     justify-content: center; /* 수직 중앙 정렬 */
