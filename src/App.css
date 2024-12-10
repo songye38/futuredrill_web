@@ -1,5 +1,10 @@
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  min-height: 100vh; /* 화면의 전체 높이를 차지하도록 설정 */
+  padding-bottom: 40px; /* 아래 여백 추가 */
 }
 
 .App-logo {
@@ -63,8 +68,6 @@
   position: relative;
 }
 
-
-
 .book-image {
   width: 300px; /* 이미지 크기 */
   height: auto; /* 비율 유지 */
@@ -81,3 +84,44 @@
 .book-image:hover {
   transform: scale(1.1); /* 이미지 호버 시 확대 */
 }
+
+
+@media (max-width: 768px) {
+
+  .book-list {
+    background-image: url('/public/Images/mainMobile.png'); /* 배경 이미지 */
+    background-size: cover;
+    background-position: center; /* 중앙 정렬 */
+    background-repeat: no-repeat;
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    height: auto;
+    min-height: 100vh; /* 화면 크기에 맞춰 최소 높이를 설정 */
+    padding-top: 250px; /* 위쪽 여백 */
+  }
+  .second_section {
+    flex-direction: column; /* 768px 이하에서는 세로 배치 */
+    gap : 32px;
+  }
+
+  .image-section {
+    display: flex;
+    flex-direction: row; /* 이미지들도 세로로 배치 */
+    align-items: center; /* 이미지들 가운데 정렬 */
+    gap : 3px;
+  }
+  .image-section img {
+    max-width: 48%; /* 이미지의 최대 너비는 부모의 48% */
+    height: auto; /* 높이는 비율에 맞게 자동으로 설정 */
+    object-fit: contain; /* 이미지 비율에 맞게 잘림 방지 */
+    max-height: 200px; /* 이미지 최대 높이를 200px로 제한 */
+  }
+  .third-section img {
+    transform: rotate(90deg); /* 이미지를 90도 회전 */
+    width: 100vw; /* 화면의 너비를 100%로 설정 */
+    height: 100vh; /* 화면의 높이를 100%로 설정 */
+    object-fit: cover; /* 이미지 비율을 유지하며 화면에 맞게 자르기 */
+  }
+}
+

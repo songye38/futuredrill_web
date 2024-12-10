@@ -1,30 +1,7 @@
 import React from "react";
-import MainDesk from "./Components/MainDesk.js.";
 import "./App.css";
 
 function App() {
-  // 여러 책 정보를 배열로 관리
-  const books = [
-    {
-      id: 1,
-      title: "Book 1",
-      image: "book1.png", // 책 커버 이미지 경로
-      link: "https://example.com/book1", // 책 링크
-    },
-    {
-      id: 2,
-      title: "Book 2",
-      image: "book2.png",
-      link: "https://example.com/book2",
-    },
-    {
-      id: 3,
-      title: "Book 3",
-      image: "book3.png",
-      link: "https://example.com/book3",
-    },
-  ];
-
   return (
     <div className="App">
       <div className="first-section">
@@ -67,17 +44,17 @@ function App() {
             wordWrap: 'break-word',
             textAlign: 'left'
           }}>
-            AIX, AI + Experience는 인공지능을 기술이 아닌,<br/>
+            AIX, AI + Experience는 인공지능을 기술이 아닌,
             경험 관점에서 이해하고 연구합니다.<br/><br/>
-            AI에 대한 이해를 통해 다양한 도메인에서<br/>
-            새로운 시도를 진행해보고<br/>
-            각 연구원님들의 관심 영역 도메인과 연결함으로써<br/>
+            AI에 대한 이해를 통해 다양한 도메인에서
+            새로운 시도를 진행해보고
+            각 연구원님들의 관심 영역 도메인과 연결함으로써
             함께 토론하며 확장하고 있습니다.<br/><br/>
-            AI와 UX와 관련된 논문이나 이슈를 함께 의논하면서<br/>
-            뉴스레터 및 이론적인 학습을 “Input”으로 하고,<br/>
-            이를 양분삼아 공통의 관심사의 연결점에 따라서<br/>
+            AI와 UX와 관련된 논문이나 이슈를 함께 의논하면서
+            뉴스레터 및 이론적인 학습을 “Input”으로 하고,
+            이를 양분삼아 공통의 관심사의 연결점에 따라서
             프로젝트나 논문쓰기를 “Output”으로 합니다.<br/><br/>
-            AI의 이해를 바탕으로 다양한 도메인 영역에서<br/>
+            AI의 이해를 바탕으로 다양한 도메인 영역에서
             새로운 시도를 진행해보고 싶은 분들을 환영합니다!
           </div>
         </div>
@@ -91,9 +68,6 @@ function App() {
       <div className="third-section">
        <img style={{width: '100%', height: '100%'}} alt= 'img1' src="Images/section3_img1.png" />
       </div>
-
-
-      {/* <MainDesk books={books} /> */}
     </div>
   );
 }
