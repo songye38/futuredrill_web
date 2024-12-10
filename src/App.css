@@ -110,7 +110,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 160vh; /* 페이지 전체 높이로 설정 */
+    height: 120vh; /* 페이지 전체 높이로 설정 */
   }
 
   .book-list {
