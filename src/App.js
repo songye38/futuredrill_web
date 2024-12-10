@@ -50,7 +50,7 @@ function App() {
           gap: 38 // 요소들 간 간격
         }}>
           <div style={{
-            color: '#EE61A7',
+            color: 'black',
             fontSize: '40px',
             fontFamily: 'Pretendard',
             fontWeight: '900',
