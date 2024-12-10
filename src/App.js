@@ -29,7 +29,7 @@ function App() {
           <div style={{
             color: '#EE61A7',
             fontSize: '40px',
-            fontFamily: 'Pretendard',
+            fontFamily: 'Noto Sans KR',
             fontWeight: '900',
             wordWrap: 'break-word'
           }}>
@@ -38,7 +38,7 @@ function App() {
           <div style={{
             color: 'black',
             fontSize: '18px',
-            fontFamily: 'Pretendard',
+            fontFamily: 'Noto Sans KR',
             fontWeight: 'Regular',
             lineHeight: '32px',
             wordWrap: 'break-word',
