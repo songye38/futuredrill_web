@@ -17,7 +17,7 @@ function App() {
             </a>
         </div>
       </div>
-      <div className="second_section" id="second-section" style={{ margin: '100px 100px 0 100px', display: 'flex', justifyContent: 'space-between' }}>
+      <div className="second_section" id="second-section" style={{ margin: '100px', display: 'flex', justifyContent: 'space-between' }}>
         <div className="text-section">
         <div style={{
           width: '100%', // 부모의 너비를 100%로 설정
