@@ -37,6 +37,13 @@
   }
 }
 
+.first-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 110vh; /* 페이지 전체 높이로 설정 */
+}
+
 .book-list {
   background-image: url('/public/Images/mainDesk.png'); /* 배경 이미지 */
   background-size: cover; /* 배경 이미지가 영역을 덮도록 확대 */
@@ -44,20 +51,30 @@
   background-repeat: no-repeat; /* 반복 방지 */
   padding: 20px; /* 책 이미지 간의 간격 */
   border-radius: 8px; /* 둥근 모서리 */
-  width: 80%; /* 전체 너비 */
-  height: 100vh; /* 화면 전체 크기 */
+  width: 100%; /* 부모의 너비를 100%로 설정 */
+  height: 100%; /* 부모의 높이를 100%로 설정 */
+
+  /* Flexbox로 이미지들을 일직선으로 배치 */
+  display: flex;
+  justify-content: center; /* 수평 중앙 정렬 */
+  align-items: flex-end; /* 이미지들을 아래쪽에 배치 */
+  gap: 20px; /* 이미지들 간의 간격 */
+  
+  position: relative;
 }
 
 
 
 .book-image {
-  width: 200px; /* 이미지 크기 */
+  width: 300px; /* 이미지 크기 */
   height: auto; /* 비율 유지 */
   border-radius: 8px; /* 둥근 모서리 */
   transition: transform 0.3s ease; /* 호버 시 애니메이션 효과 */
 }
 
 .book-list a {
+  position: relative;
+  bottom: 60px; /* 바닥에서 200px 위에 배치 */
   text-decoration: none; /* 링크의 기본 밑줄 제거 */
 }
 

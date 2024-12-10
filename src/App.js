@@ -29,18 +29,18 @@ function App() {
     <div className="App">
       <div className="first-section">
           <div className="book-list">
-            <a href="https://example.com/book1"> 
+            <a href="#second-section"> 
               <img src="Images/book1.png" alt="Book 1" className="book-image" />
             </a>
-            <a href="https://example.com/book2">
+            <a href="https://futuredrill.stibee.com/">
               <img src="Images/book2.png" alt="Book 2" className="book-image" />
             </a>
-            <a href="https://example.com/book3">
+            <a href="#second-section">
               <img src="Images/book3.png" alt="Book 3" className="book-image" />
             </a>
         </div>
       </div>
-      <div className="second_section" style={{ margin: '100px', display: 'flex', justifyContent: 'space-between' }}>
+      <div className="second_section" id="second-section" style={{ margin: '100px', display: 'flex', justifyContent: 'space-between' }}>
         <div className="text-section">
         <div style={{
           width: '100%', // 부모의 너비를 100%로 설정
@@ -50,7 +50,7 @@ function App() {
           gap: 38 // 요소들 간 간격
         }}>
           <div style={{
-            color: 'black',
+            color: '#EE61A7',
             fontSize: '40px',
             fontFamily: 'Pretendard',
             fontWeight: '900',
