@@ -12,7 +12,7 @@ function App() {
             <a href="https://futuredrill.stibee.com/">
               <img src="Images/book2.png" alt="Book 2" className="book-image" />
             </a>
-            <a href="#second-section">
+            <a href="https://drive.google.com/file/d/1z1H6NhnBr1gfc3upR_fS_prdl5IbIc10/view?usp=sharing">
               <img src="Images/book3.png" alt="Book 3" className="book-image" />
             </a>
         </div>
