@@ -99,7 +99,22 @@
     height: auto;
     min-height: 100vh; /* 화면 크기에 맞춰 최소 높이를 설정 */
     padding-top: 250px; /* 위쪽 여백 */
+
+    display: flex;
+    flex-direction: column; /* 이미지들을 수직으로 배치 */
+    justify-content: center; /* 수직 중앙 정렬 */
+    align-items: center; /* 수평 중앙 정렬 */
+    gap: 120px; /* 이미지들 간의 간격 */
+    position: relative; /* 필요에 따라 절대 위치 지정이 가능 */
   }
+  .book-list a {
+    position: relative;
+    bottom: 80px; /* 바닥에서 200px 위에 배치 */
+    text-decoration: none; /* 링크의 기본 밑줄 제거 */
+  }
+
+
+
   .second_section {
     flex-direction: column; /* 768px 이하에서는 세로 배치 */
     gap : 32px;
@@ -122,6 +137,12 @@
     width: 100vw; /* 화면의 너비를 100%로 설정 */
     height: 100vh; /* 화면의 높이를 100%로 설정 */
     object-fit: cover; /* 이미지 비율을 유지하며 화면에 맞게 자르기 */
+  }
+  .book-image {
+    width: 150px; /* 이미지 크기 */
+    height: auto; /* 비율 유지 */
+    border-radius: 8px; /* 둥근 모서리 */
+    transition: transform 0.3s ease; /* 호버 시 애니메이션 효과 */
   }
 }
 
