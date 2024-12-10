@@ -115,6 +115,7 @@
 
 
   .second_section {
+    margin: '32px 32px 0 32px';
     flex-direction: column; /* 768px 이하에서는 세로 배치 */
     gap : 32px;
   }
