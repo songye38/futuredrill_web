@@ -2,7 +2,6 @@
   text-align: center;
   display: flex;
   flex-direction: column;
-  gap: 40px;
   min-height: 100vh; /* 화면의 전체 높이를 차지하도록 설정 */
   padding-bottom: 40px; /* 아래 여백 추가 */
 }
@@ -132,12 +131,7 @@
     object-fit: contain; /* 이미지 비율에 맞게 잘림 방지 */
     max-height: 200px; /* 이미지 최대 높이를 200px로 제한 */
   }
-  .third-section img {
-    transform: rotate(90deg); /* 이미지를 90도 회전 */
-    width: 100vw; /* 화면의 너비를 100%로 설정 */
-    height: 100vh; /* 화면의 높이를 100%로 설정 */
-    object-fit: cover; /* 이미지 비율을 유지하며 화면에 맞게 자르기 */
-  }
+
   .book-image {
     width: 150px; /* 이미지 크기 */
     height: auto; /* 비율 유지 */
