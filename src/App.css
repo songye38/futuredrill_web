@@ -1,3 +1,19 @@
+
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* 이후에 해당 서체를 사용할 수 있도록 설정 */
+body {
+  font-family: 'Pretendard-Regular', sans-serif;
+}
+
+
+
+
 .App {
   text-align: center;
   display: flex;
@@ -112,13 +128,6 @@
     text-decoration: none; /* 링크의 기본 밑줄 제거 */
   }
 
-
-
-  .second_section {
-    margin: '32px 32px 0 32px';
-    flex-direction: column; /* 768px 이하에서는 세로 배치 */
-    gap : 32px;
-  }
 
   .image-section {
     display: flex;
